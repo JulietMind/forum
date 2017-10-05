@@ -1,3 +1,0 @@
-title = Msgme
-author = JulietPapa
-orientation = portrait
