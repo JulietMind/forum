@@ -1,3 +1,3 @@
 # MSGME
 #
-# Crea un foro y aprende Brython
+# Un simple invitado conversando con un Anfitrion.
