@@ -41,13 +41,21 @@ Version: 1.0.0;
 
 .temas{
 	display: grid;
-	grid-template-columns: 1fr 5fr;
+	grid-template-columns: 1fr 3fr;
 	grid-gap: 1em;
-	padding: 1em;
+}
+
+.tema, .categoria, .usuarios, .respuestas, .visitas, .actividad{
+	display: block;
+	border-bottom: 1px solid black;
+	text-decoration: none;
+	color: black;
+	font-weight: 800;
 }
 
 
 
+/*FOOTER*/
 .footer{
 	text-align: center;
 	position: absolute;
