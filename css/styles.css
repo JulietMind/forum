@@ -1,0 +1,143 @@
+/*
+Author: JulietMind;
+Date: 06/10/2017;
+Version: 1.0.0;
+*/
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+.wrapper-nav{
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-column-gap: 1em;
+	padding: 0,5em;
+	/*box-shadow: [horizontal offset] [vertical offset] [blur radius] [color];*/
+	-webkit-box-shadow:0px 1px 1px black;
+ 	-moz-box-shadow:0px 1px 1px black;
+ 	box-shadow:0px 1px 5px grey;
+}
+
+.content-logo img{
+	display: block;
+	margin: auto;
+}
+
+.content-search{
+	display: block;
+	margin: auto;
+}
+
+.content-nav{
+	display: block;
+	margin: auto;
+}
+
+/*SECOND-NAV*/
+.wrapper-secondnav{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 1em;
+	padding: 2.5em;
+	width: 50%;
+	margin: 0 25% 0 25%;
+}
+
+.wrapper-secondnav a{
+	text-decoration: none;
+	color: black;
+	background: #2388db;
+	border-radius: 4px;
+	text-align: center;
+	padding: 0.5em;
+}
+
+.wrapper-secondnav a:hover{
+	background: rgba(0,0,0,0);
+	color: black;
+	box-shadow: inset 0 0 0 0.5px #3a7999;
+}
+
+
+
+/*TABLES*/
+.wrapper-tables{
+	display: grid;
+	grid-template-columns: 8fr 3fr 3fr 2fr 2fr 2fr;
+	padding: 0.5em 8em;
+}
+
+.temas{
+	display: grid;
+	grid-template-columns: 1fr 11fr;
+}
+
+.tema, .categoria, .usuarios, .respuestas, .visitas, .actividad{
+	display: grid;
+	text-decoration: none;
+	color: black;
+	font-weight: 800;
+	border-bottom: 4px solid grey;
+}
+
+.content-search{
+	text-align: left;
+}
+
+.content-search input{
+	border-radius: 4px;
+	border-style: none;
+	width: 7em;
+	height: 35px;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+
+.content-search input:focus{
+	border-style: none;
+	width: 45em;
+}
+
+.content-search a{
+	text-decoration: none;
+	background-color: #2388db;
+	padding: 0.5em;
+	border-radius: 4px;
+	color: white;
+}
+
+/*CONTENT-NAV*/
+.content-nav ul{
+	display: none;
+	/*height: 0;*/
+}
+
+.content-nav ul.show{
+	display: inline-block;
+
+}
+
+.content-nav ul li{
+	list-style: none;
+}
+
+.content-nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+/*FOOTER*/
+.footer{
+	text-align: center;
+	position: absolute;
+ 	right: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	padding: 1rem;
+}
