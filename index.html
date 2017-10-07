@@ -5,8 +5,17 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script type="text/python" src="js/brythonfunctions.js"></script>
+	<script type="text/python" src="js/brython_stdlib.js"></script>
 </head>
-<body>
+<body onload="brython()">
+	<script type="text/python">
+from browser import document, alert
+def echo(ev):
+    alert(document["zone"].value)
+
+document['mybutton'].bind('click',echo)
+</script>
 <header>	
 	<div class="wrapper-nav">
 		<div class="content-logo">
@@ -15,7 +24,7 @@
 	
 		<div class="content-search">
 			<input type="text" placeholder="Busca temas, usuarios, posts o categorias...">
-			<a href="">Buscar</a>
+			<a href="" class="btn-buscar">Buscar</a>
 		</div>
 
 	
@@ -94,7 +103,8 @@
 <div class="footer">
 	<p><strong>ElxLabForum</strong> 2017&copy</p> 
 </div>
-
+	
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/function.js"></script>
 
