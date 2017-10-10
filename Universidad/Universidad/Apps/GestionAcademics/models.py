@@ -29,8 +29,8 @@ class Curso(models.Model):
 		return "{0} ({1})".format(self.Nombre, self.Creditos)
 
 class Matricula(models.Model):
-	Alumno = models.ForeignKey('Self', null=False, blank=False, on_delete=models.CASCADE)
-	Curso = models.ForeignKey('Alumno', null=False, blank=False, on_delete=models.CASCADE)
+	Alumno = models.ForeignKey('Alumno', null=False, blank=False, on_delete=models.CASCADE)
+	Curso = models.ForeignKey('Curso', null=False, blank=False, on_delete=models.CASCADE)
 	FechaMatricula = models.DateTimeField(auto_now_add=True)
 
 	def __str__(self):
