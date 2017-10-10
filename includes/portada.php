@@ -1,3 +1,3 @@
-<div class="portada">
-	PORTADA
-</div>
+<p>TITULO</p>
+
+<p>Texto descriptivo de la pagina web.</p>

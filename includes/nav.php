@@ -26,5 +26,5 @@
 	<a href="?id=portada">Portada</a>
 	<a href="?id=foro">Foro</a>
 	<a href="?id=grupos">Grupos</a>
-	<a href="?id=faqs">FAQ</a>
+	<a href="?id=faq">FAQ</a>
 </div>

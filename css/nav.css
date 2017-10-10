@@ -3,6 +3,7 @@ Author: JulietMind;
 Date: 06/10/2017;
 Version: 1.0.0;
 */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
 
 *{
 	margin:0;
@@ -15,7 +16,7 @@ Version: 1.0.0;
 	display: grid;
 	grid-template-columns: 1fr 4fr 1fr;
 	grid-column-gap: 1em;
-	padding: 0,5em;
+	/*padding: 0,1em;*/
 	/*box-shadow: [horizontal offset] [vertical offset] [blur radius] [color];*/
 	-webkit-box-shadow:0px 1px 1px black;
  	-moz-box-shadow:0px 1px 1px black;
@@ -25,6 +26,7 @@ Version: 1.0.0;
 .content-logo img{
 	display: block;
 	margin: auto;
+	height: 75px;
 }
 
 .content-search{
@@ -68,7 +70,6 @@ Version: 1.0.0;
 
 .content-nav ul.show{
 	display: inline-block;
-
 }
 
 .content-nav ul li{
@@ -81,6 +82,30 @@ Version: 1.0.0;
 }
 
 
+/*SECOND-NAV*/
+.wrapper-secondnav{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 1em;
+	padding: 2em 0.5em 3.5em 0.5em;
+	width: 40%;
+	margin: 0 30% 0 30%;
+}
+
+.wrapper-secondnav a{
+	text-decoration: none;
+	color: black;
+	background: #2388db;
+	border-radius: 4px;
+	text-align: center;
+	padding: 0.2em;
+}
+
+.wrapper-secondnav a:hover{
+	background: rgba(0,0,0,0);
+	color: black;
+	box-shadow: inset 0 0 0 0.5px #3a7999;
+}
 
 
 /*FOOTER*/
@@ -91,29 +116,4 @@ Version: 1.0.0;
  	bottom: 0;
  	left: 0;
  	padding: 1rem;
-}
-
-/*SECOND-NAV*/
-.wrapper-secondnav{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-column-gap: 1em;
-	padding: 2.5em;
-	width: 50%;
-	margin: 0 25% 0 25%;
-}
-
-.wrapper-secondnav a{
-	text-decoration: none;
-	color: black;
-	background: #2388db;
-	border-radius: 4px;
-	text-align: center;
-	padding: 0.5em;
-}
-
-.wrapper-secondnav a:hover{
-	background: rgba(0,0,0,0);
-	color: black;
-	box-shadow: inset 0 0 0 0.5px #3a7999;
 }
