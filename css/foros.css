@@ -1,0 +1,110 @@
+/*FOROS*/
+.wrapper-tables{
+	display: grid;
+	grid-template-columns: 8fr 3fr 3fr 2fr 2fr 2fr;
+	padding: 0.5em 8em;
+}
+
+.temas{
+	display: grid;
+	grid-template-columns: 1fr 11fr;
+}
+
+.tema, .categoria, .usuarios, .respuestas, .visitas, .actividad{
+	display: grid;
+	text-decoration: none;
+	color: black;
+	font-weight: 800;
+	border-bottom: 4px solid grey;
+}
+
+.crear-tema-btn {
+	margin-top: 50px;
+}
+
+.crear-tema-btn a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	background: #2388db;
+	padding: 20px;
+	border-radius: 4px;
+	width: 500px;
+	text-align: center;
+}
+
+/*JQUERY*/
+.oscurecer{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	z-index: 200;
+	background: rgba(0,0,0,.9);
+}
+
+.crear{
+	z-index: 100;
+	position: absolute;
+	top: 20%;
+	bottom: 25%;
+	height: 50%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: 200px;
+	grid-template-areas:
+	    ". a a ."
+    	". a a .";
+}
+
+.crear-form{
+	display: none;
+	grid-area: a;
+	align-self: center;
+	justify-self: center;
+}
+
+.crear-form h1{
+	text-align: center;
+	color: white;
+}
+
+.crear-form .titulo{
+	width: 100%;
+	padding: 12px 20px;
+	display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.crear-form textarea{
+	width: 100%;
+	padding: 12px 20px;
+	display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 2em;
+}
+
+.crear-form .btn-crear{
+	width: 100%;
+	padding: 12px 20px;
+	display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    background: #2388db;
+    cursor: pointer;
+    color: white;
+    font-size: 19px;
+}
+
+.crear-form .btn-crear:hover{
+	background: #165487;
+}

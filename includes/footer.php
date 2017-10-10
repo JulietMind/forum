@@ -1,4 +1,5 @@
 <div class="footer">
+	<hr class="hr">
 	<p><strong>ElxLabForum</strong> 2017&copy</p> 
 </div>
 

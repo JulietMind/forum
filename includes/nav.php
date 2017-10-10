@@ -9,7 +9,6 @@
 			<a href="">Buscar</a>
 		</div>
 
-	
 		<div class="content-nav">
 			<a href="#"><img src="img/menu.png" class="img-menu"></a>
 			<ul>
