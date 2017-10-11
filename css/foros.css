@@ -33,6 +33,12 @@
 	text-align: center;
 }
 
+.crear-tema-btn a:hover{
+	background: #fff;
+	border: 1px solid #2388db;
+	color: #2388db;
+}
+
 /*JQUERY*/
 .oscurecer{
 	display: none;
@@ -41,30 +47,17 @@
 	height: 100%;
 	top: 0;
 	bottom: 0;
-	z-index: 200;
+	z-index: 100;
 	background: rgba(0,0,0,.9);
 }
 
 .crear{
-	z-index: 100;
-	position: absolute;
-	top: 20%;
-	bottom: 25%;
-	height: 50%;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 10px;
-	grid-auto-rows: 200px;
-	grid-template-areas:
-	    ". a a ."
-    	". a a .";
-}
-
-.crear-form{
 	display: none;
-	grid-area: a;
-	align-self: center;
-	justify-self: center;
+	position: fixed;
+	width: 50%;
+	top: 20%;
+	left: 25%;
+	z-index: 200;
 }
 
 .crear-form h1{

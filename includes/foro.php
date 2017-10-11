@@ -51,7 +51,6 @@
 	</div>	
 
 <!-- CREAR TEMA -->
-<div id="oscurecer" class="oscurecer">
 
 	<div class="crear">
 		<div class="crear-form">
@@ -64,5 +63,4 @@
 			</form>
 		</div>
 	</div>
-
-</div>
+<div id="oscurecer" class="oscurecer"></div>
