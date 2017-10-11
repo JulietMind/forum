@@ -22,30 +22,18 @@ function activetemas(){
 
 $(document).ready (activetemas);
 
-// DE AQUI PARA ARRIBA CON FUNCIONES NO ESTA FUNCIONANDO
-
-
-
+// ====== SHO
 
 // MOSTRAR MENU
-// $(document).ready(function(){
-// 	$('.img-menu').on('click', function(){
-// 		$('.content-nav ul').toggleClass('show')
-// 	});
-// });
+$(document).ready(function(){
+	$('.img-menu').on('click', function(){
+		$('.content-nav ul').toggleClass('show')
+	});
+});
 
 
 
-// $(document).ready(function(){
-// 	$('.crear-tema-btn').click(function(){
-// 		$('#oscurecer').toggle();
-// 	});
-// 	$('#oscurecer').click(function(){
-// 		$(this).css({display: "none"})
-// 	})
-// })
-
-// MOSTRAR/OCULTAR CREAR TEMA
+// MOSTRAR/OCULTAR LOGIN
 
 // function showcreartemas(){
 // 	event.preventDefault();
