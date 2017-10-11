@@ -1,3 +1,4 @@
+// ======= SHOWING FORM FUNCTIONS =======
 function hideform(){
 	$('.crear').fadeOut(300);
 }
@@ -21,20 +22,17 @@ function activetemas(){
 }
 
 $(document).ready (activetemas);
+// ======= SHOWING FORM FUNCTIONS =======
 
-// ====== SHO
-
-// MOSTRAR MENU
+// ======= MOSTRAR MENU =======
 $(document).ready(function(){
 	$('.img-menu').on('click', function(){
 		$('.content-nav ul').toggleClass('show')
 	});
 });
+// ======= MOSTRAR MENU =======
 
-
-
-// MOSTRAR/OCULTAR LOGIN
-
+// ======== MOSTRAR/OCULTAR LOGIN =======
 // function showcreartemas(){
 // 	event.preventDefault();
 // 	$('#login').animate({
@@ -48,4 +46,4 @@ $(document).ready(function(){
 // 		'top' : '-100'
 // 	}, 500);
 // }
-
+// ======== MOSTRAR/OCULTAR LOGIN =======
