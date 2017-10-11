@@ -1,4 +1,4 @@
-// ======= SHOWING FORM FUNCTIONS =======
+// ======= SHOW FORM FUNCTIONS =======
 function hideform(){
 	$('.crear').fadeOut(300);
 }
@@ -22,7 +22,7 @@ function activetemas(){
 }
 
 $(document).ready (activetemas);
-// ======= SHOWING FORM FUNCTIONS =======
+// ======= SHOW FORM FUNCTIONS =======
 
 // ======= MOSTRAR MENU =======
 $(document).ready(function(){

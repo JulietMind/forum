@@ -55,9 +55,9 @@
 	<div class="crear">
 		<div class="crear-form">
 			<h1>Crea tu Tema</h1>
-			<form action="">
-				<input class=titulo type="text" placeholder="Nombre del titulo" autofocus>
-				<textarea rows="10" cols="100" placeholder="Escribe aqui tu texto"></textarea>
+			<form action="includes/crear_tema.php" method="post">
+				<input class=titulo name="titulo" type="text" placeholder="Nombre del titulo" autofocus>
+				<textarea name="mensaje" rows="10" cols="100" placeholder="Escribe aqui tu texto"></textarea>
 
 				<input class="btn-crear" type="submit">
 			</form>
