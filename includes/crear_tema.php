@@ -1,13 +1,13 @@
 <?php 
 $titulo = $_POST['titulo'];
 $mensaje = $_POST['mensaje'];
-$fecha = date('d-m-y');
+// $fecha = date("Y-m-d H:i:s");
 
 // ======= CONECTAR BASE DE DATOS =======
 include('conectardb.php');
 
 
-$tema_sql = "INSERT INTO temas_foro (titulo_tema, mensaje_tema, fecha_creacion) VALUES ('hola', 'mensaje', date('d-m-y'))";
+$tema_sql = "INSERT INTO temas_foro (titulo_tema, mensaje_tema, fecha_creacion) VALUES ('$titulo','$mensaje',NOW())";
 // $tema_sql = "INSERT INTO 'temas_foro' (titulo_tema, mensaje_tema, fecha_creacion) VALUES ('hola', 'mensaje', 'null')";
 
 mysqli_query($conectarbd, $tema_sql);
