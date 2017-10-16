@@ -2,7 +2,7 @@
 <?php
 require_once('conectardb.php');
 
-$sql = "SELECT * FROM temas_foro ORDER BY id ASC LIMIT 0,1";
+$sql = "SELECT * FROM temas_foro ORDER BY id DESC LIMIT 0,1";
 $result = mysqli_query($conectarbd, $sql);
 
 if (!$result) die ("Fallo en acceso a base de datos: ") . mysqli_error();
@@ -68,15 +68,14 @@ echo '</a></h3>
 		<a href="" class="actividad">Actividad</a>
 		<div class="actividadNum">
 			<!-- Ultima actividad en el tema -->
-<!-- 			<a href="">2 dias</a>
+			<a href="">2 dias</a>
 		</div>
+	</div>	
 
-		<div class="crear-tema-btn">
-			<a class="crear-tema" href="">Crear tema</a>
-		</div>
+	<div class="crear-tema-btn">
+		<a class="crear-tema" href="">Crear tema</a>
+	</div>
 </div>
-	</div>	 -->
-
 
 
 <!-- CREAR TEMA -->
