@@ -1,5 +1,32 @@
+<!-- MOSTRAR TEMAS  -->
+<?php
+require_once('conectardb.php');
+
+$sql = "SELECT * FROM temas_foro ORDER BY id ASC LIMIT 0,1";
+$result = mysqli_query($conectarbd, $sql);
+
+if (!$result) die ("Fallo en acceso a base de datos: ") . mysqli_error();
+	
+if ($result){
+	echo '<div class="wrapper-tables">
+	<div class="title-tema">
+		<a href="" class="tema">Tema</a>
+		<div class="temas">
+			<a href=""><img src="img/user.png"></a>
+			<h3><a href="">';
+	while ($row=mysqli_fetch_row($result)){ 
+			printf ("%s", $row[1]); 
+	}
+echo '</a></h3>
+		</div>
+	</div>';
+}
+
+?>
+
+
 <!-- TABLES -->
-<div class="wrapper-tables">
+<!-- <div class="wrapper-tables">
 
 	<div class="title-tema">
 		<a href="" class="tema">Tema</a>
@@ -7,7 +34,7 @@
 			<a href=""><img src="img/user.png"></a>
 			<h3><a href="">phpGet Titulo del post</a></h3>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="title-categoria">
 		<a href="" class="categoria">Categoria</a>
@@ -41,14 +68,16 @@
 		<a href="" class="actividad">Actividad</a>
 		<div class="actividadNum">
 			<!-- Ultima actividad en el tema -->
-			<a href="">2 dias</a>
+<!-- 			<a href="">2 dias</a>
 		</div>
 
 		<div class="crear-tema-btn">
 			<a class="crear-tema" href="">Crear tema</a>
 		</div>
 </div>
-	</div>	
+	</div>	 -->
+
+
 
 <!-- CREAR TEMA -->
 
