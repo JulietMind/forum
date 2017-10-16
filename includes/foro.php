@@ -2,26 +2,27 @@
 <?php
 require_once('conectardb.php');
 
-$sql = "SELECT * FROM temas_foro ORDER BY id DESC LIMIT 0,1";
+$sql = "SELECT * FROM temas_foro ORDER BY id DESC LIMIT 0, 10";
 $result = mysqli_query($conectarbd, $sql);
 
 if (!$result) die ("Fallo en acceso a base de datos: ") . mysqli_error();
 	
 if ($result){
-	echo '<div class="wrapper-tables">
-	<div class="title-tema">
-		<a href="" class="tema">Tema</a>
-		<div class="temas">
-			<a href=""><img src="img/user.png"></a>
-			<h3><a href="">';
+			echo '<div class="wrapper-tables">
+			<div class="title-tema">
+			<a href="" class="tema">Tema</a>
+			<div class="temas">
+			'
+			;
 	while ($row=mysqli_fetch_row($result)){ 
+		echo '<h3><a href="">';
 			printf ("%s", $row[1]); 
-	}
-echo '</a></h3>
-		</div>
-	</div>';
+		echo '</a></h3>';
+		}
+				
 }
-
+echo '</div>
+	</div>';
 ?>
 
 
@@ -30,8 +31,8 @@ echo '</a></h3>
 
 	<div class="title-tema">
 		<a href="" class="tema">Tema</a>
+		<a href=""><img src="img/user.png"></a>
 		<div class="temas">
-			<a href=""><img src="img/user.png"></a>
 			<h3><a href="">phpGet Titulo del post</a></h3>
 		</div>
 	</div> -->

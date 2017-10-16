@@ -7,7 +7,7 @@
 
 .temas{
 	display: grid;
-	grid-template-columns: 1fr 11fr;
+	grid-template-columns: 12fr;
 }
 
 .tema, .categoria, .usuarios, .respuestas, .visitas, .actividad{
