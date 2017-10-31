@@ -2,24 +2,22 @@
 <?php
 require_once('conectardb.php');
 
-$sql = "SELECT * FROM temas_foro ORDER BY id DESC LIMIT 0, 10";
+$sql = "SELECT * FROM temas_foro ORDER BY id DESC LIMIT 0, 999";
 $result = mysqli_query($conectarbd, $sql);
 
 if (!$result) die ("Fallo en acceso a base de datos: ") . mysqli_error();
-	
+
 if ($result){
 			echo '<div class="wrapper-tables">
 			<div class="title-tema">
 			<a href="" class="tema">Tema</a>
-			<div class="temas">
-			'
-			;
-	while ($row=mysqli_fetch_row($result)){ 
-		echo '<h3><a href="">';
+			<div class="temas">';
+	while ($row=mysqli_fetch_row($result)){
+		$enlace=str_replace(" ","-",$row[1]);
+		echo '<h3><a href="?id='.$enlace.'">';
 			printf ("%s", $row[1]); 
 		echo '</a></h3>';
-		}
-				
+		}		
 }
 echo '</div>
 	</div>';
