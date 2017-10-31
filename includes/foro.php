@@ -13,8 +13,7 @@ if ($result){
 			<a href="" class="tema">Tema</a>
 			<div class="temas">';
 	while ($row=mysqli_fetch_row($result)){
-		$enlace=str_replace(" ","-",$row[1]);
-		echo '<h3><a href="?id='.$enlace.'">';
+		echo '<h3><a href="?p='.$row[0].'">';
 			printf ("%s", $row[1]); 
 		echo '</a></h3>';
 		}		

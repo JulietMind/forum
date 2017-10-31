@@ -7,10 +7,22 @@ include('includes/nav.php');
 // $page = $_GET{'id'};
 
 if(isset($_GET['id'])){
-	switch ($_GET['id']) {
+	$id=$_GET['id'];
+	include('includes/'.$id.'.php');
+}
+
+
+if(isset($_GET['p'])){
+	$p=$_GET['p'];
+	include('includes/'.$p.'.php');
+}
+
+include('includes/footer.php'); ?>
+
+
+<!-- 	switch ($_GET['id']) {
 		case 'foro':
-			include('includes/foro.php');
-			break;
+	break;
 		case 'grupos':
 			include('includes/grupos.php');
 			break;
@@ -20,9 +32,4 @@ if(isset($_GET['id'])){
 		default:
 			include('includes/portada.php');
 			break;
-	}
-}
-
-
-include('includes/footer.php'); ?>
-
+ -->
